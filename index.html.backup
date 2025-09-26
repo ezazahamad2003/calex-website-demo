@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GovDash — Government Analytics & Performance Dashboard</title>
+  <meta name="description" content="GovDash is a comprehensive government analytics platform providing real-time insights, performance metrics, and data visualization for public sector organizations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <!-- Header -->
+  <header class="header" aria-label="Main Navigation">
+    <div class="container header__inner">
+      <a class="logo" href="/" aria-label="GovDash Home">GovDash</a>
+      <nav class="nav" aria-label="Site Navigation">
+        <ul>
+          <li><a href="#home" tabindex="0">Home</a></li>
+          <li><a href="#features" tabindex="0">Features</a></li>
+          <li><a href="#analytics" tabindex="0">Analytics</a></li>
+          <li><a href="#how" tabindex="0">How It Works</a></li>
+          <li><a href="#contact" tabindex="0">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile Navigation" hidden>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#analytics">Analytics</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section id="home" class="hero container">
+      <div class="hero__content reveal">
+        <h1 class="hero__title">Government Analytics That Drive Results</h1>
+        <p class="hero__subtitle">
+          GovDash provides comprehensive performance monitoring, real-time analytics, and actionable insights to help government organizations make data-driven decisions and improve public services.
+        </p>
+        <div class="hero__ctas">
+          <a href="#features" class="btn btn-primary" aria-label="Explore Features">Explore Features</a>
+          <a href="#contact" class="btn btn-secondary" aria-label="Request Demo">Request Demo</a>
+        </div>
+        <div class="hero__badges">
+          <span class="badge">Real-time Analytics</span>
+          <span class="badge">Performance Metrics</span>
+          <span class="badge">Data Visualization</span>
+        </div>
+      </div>
+      <div class="hero__mockup reveal">
+        <div class="dashboard-ui">
+          <div class="phone-ui__screen">
+            <div class="chat-bubble chat-bubble--user">
+              <span>“What’s the required setback for a new duplex?”</span>
+            </div>
+            <div class="chat-bubble chat-bubble--calex">
+              <span>
+                “For R-2 zoning, min. setback is 15ft (see §17.24.030). Would you like a full checklist?”
+              </span>
+            </div>
+            <div class="chat-bubble chat-bubble--user">
+              <span>“Does this trigger CEQA review?”</span>
+            </div>
+            <div class="chat-bubble chat-bubble--calex">
+              <span>
+                “No CEQA review for <2 units (CEQA §15303). Details in exportable report.”
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Demo Videos -->
+    <section id="demo" class="demo container">
+      <h2 class="section-title reveal">See Calex in Action</h2>
+      <div class="demo__featured reveal">
+        <div class="video-featured">
+          <button class="video__play" aria-label="Play featured demo" tabindex="0">
+            <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="url(#grad)" /><polygon points="25,20 50,32 25,44" fill="#fff"/><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6574F8"/><stop offset="100%" stop-color="#75F6E8"/></linearGradient></defs></svg>
+          </button>
+          <video controls poster="video1-poster.png" tabindex="0">
+            <source src="#" type="video/mp4">
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+          <div class="video__info">
+            <h3>Featured: RFP Checklist in Minutes</h3>
+            <p>Watch Calex walk through a full RFP approval call and checklist export.</p>
+          </div>
+        </div>
+      </div>
+      <div class="demo__grid">
+        <div class="video-tile reveal">
+          <div class="video-thumb"><img src="video2-poster.png" alt="Zoning Q&A call poster"></div>
+          <h4>Zoning Q&amp;A Call</h4>
+          <p>Instant answers and citations for complex zoning queries.</p>
+        </div>
+        <div class="video-tile reveal">
+          <div class="video-thumb"><img src="video3-poster.png" alt="Environmental review flagging poster"></div>
+          <h4>Environmental Review Flagging</h4>
+          <p>Calex spots compliance gaps and flags risk in real time.</p>
+        </div>
+        <div class="video-tile reveal">
+          <div class="video-thumb"><img src="video4-poster.png" alt="Policy-aware response poster"></div>
+          <h4>Policy-Aware Responses</h4>
+          <p>Dynamic guidance drawn from real policy databases.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Timeline -->
+    <section id="how" class="how container">
+      <h2 class="section-title reveal">How It Works</h2>
+      <ol class="timeline">
+        <li class="timeline__step reveal">
+          <span class="timeline__icon" aria-hidden="true">📞</span>
+          <div>
+            <h4>Call or Upload</h4>
+            <p>Start by calling Calex or uploading your proposal docs.</p>
+          </div>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__icon" aria-hidden="true">📚</span>
+          <div>
+            <h4>Retrieve Rules</h4>
+            <p>Calex fetches relevant zoning, CEQA, and local policy databases.</p>
+          </div>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__icon" aria-hidden="true">🔎</span>
+          <div>
+            <h4>Analyze &amp; Cite</h4>
+            <p>Instant review and citations, flagging missing info and errors.</p>
+          </div>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__icon" aria-hidden="true">👤</span>
+          <div>
+            <h4>Human Review (optional)</h4>
+            <p>Consultants can step in for complex cases or approvals.</p>
+          </div>
+        </li>
+        <li class="timeline__step reveal">
+          <span class="timeline__icon" aria-hidden="true">📄</span>
+          <div>
+            <h4>Export Report + Audit Log</h4>
+            <p>Export a full review report with audit log and citations.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Explanation / Our Idea -->
+    <section class="explanation container">
+      <div class="explanation__left reveal">
+        <h2 class="section-title">Why Calex?</h2>
+        <p>
+          Short-staffed consultancies, long waits, and compliance errors slow down approvals for projects that matter. Calex solves this by delivering instant, audit-ready guidance on calls and proposals—making approval flows faster, more accurate, and always policy-compliant.
+        </p>
+      </div>
+      <div class="explanation__right">
+        <div class="value-card reveal">
+          <h3>AI Calling Agent</h3>
+          <p>Conversational, policy-aware, and always available.</p>
+        </div>
+        <div class="value-card reveal">
+          <h3>Auto Proposal Review</h3>
+          <p>Automated, thorough checklists and flagging.</p>
+        </div>
+        <div class="value-card reveal">
+          <h3>Faster Approvals</h3>
+          <p>Reduce bottlenecks and accelerate your workflow.</p>
+        </div>
+        <div class="value-card reveal">
+          <h3>Transparency</h3>
+          <p>Clear citations, audit logs, and full process visibility.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact container">
+      <h2 class="section-title reveal">Start a Pilot</h2>
+      <form class="contact__form" autocomplete="off" aria-label="Contact Form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required aria-required="true" autocomplete="name">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required aria-required="true" autocomplete="email">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+        <button type="submit" class="btn btn-primary" aria-label="Submit Contact Form">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" aria-label="Footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">Calex</span>
+        <span class="footer__tagline">— Approvals that flow</span>
+      </div>
+      <nav class="footer__nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#demo">Demo</a></li>
+          <li><a href="#how">How It Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
+      <div class="footer__copy">
+        &copy; <span id="year"></span> Calex. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

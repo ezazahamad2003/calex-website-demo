@@ -1,11 +1,10 @@
-# calex-website-demo
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Calex — AI Calling Agent for Government & Real Estate Approvals</title>
-  <meta name="description" content="Calex is an AI calling agent for government, RFP, and real-estate approvals. Instantly flag errors, cite regulations, and accelerate your workflow.">
+  <title>GovDash — Government Analytics & Performance Dashboard</title>
+  <meta name="description" content="GovDash is a comprehensive government analytics platform providing real-time insights, performance metrics, and data visualization for public sector organizations.">
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
@@ -13,14 +12,16 @@
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to content</a>
+  
   <!-- Header -->
   <header class="header" aria-label="Main Navigation">
     <div class="container header__inner">
-      <a class="logo" href="/" aria-label="Calex Home">Calex</a>
+      <a class="logo" href="/" aria-label="GovDash Home">GovDash</a>
       <nav class="nav" aria-label="Site Navigation">
         <ul>
           <li><a href="#home" tabindex="0">Home</a></li>
-          <li><a href="#demo" tabindex="0">Demo</a></li>
+          <li><a href="#features" tabindex="0">Features</a></li>
+          <li><a href="#analytics" tabindex="0">Analytics</a></li>
           <li><a href="#how" tabindex="0">How It Works</a></li>
           <li><a href="#contact" tabindex="0">Contact</a></li>
         </ul>
@@ -34,7 +35,8 @@
     <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile Navigation" hidden>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#demo">Demo</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#analytics">Analytics</a></li>
         <li><a href="#how">How It Works</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -45,162 +47,213 @@
     <!-- Hero -->
     <section id="home" class="hero container">
       <div class="hero__content reveal">
-        <h1 class="hero__title">Approvals should flow as fast as innovation.</h1>
+        <h1 class="hero__title">Government Analytics That Drive Results</h1>
         <p class="hero__subtitle">
-          Calex is an AI calling agent that gives real-time, policy-grounded guidance for RFPs, permits, and land use—flagging errors, citing regulations, and accelerating approvals.
+          GovDash provides comprehensive performance monitoring, real-time analytics, and actionable insights to help government organizations make data-driven decisions and improve public services.
         </p>
         <div class="hero__ctas">
-          <a href="#demo" class="btn btn-primary" aria-label="Try the Demo">Try the Demo</a>
-          <a href="#contact" class="btn btn-secondary" aria-label="Start a Pilot">Start a Pilot</a>
+          <a href="#features" class="btn btn-primary" aria-label="Explore Features">Explore Features</a>
+          <a href="#contact" class="btn btn-secondary" aria-label="Request Demo">Request Demo</a>
         </div>
         <div class="hero__badges">
-          <span class="badge">Audit-ready</span>
-          <span class="badge">Policy-aware</span>
-          <span class="badge">24/7 Availability</span>
+          <span class="badge">Real-time Analytics</span>
+          <span class="badge">Performance Metrics</span>
+          <span class="badge">Data Visualization</span>
         </div>
       </div>
       <div class="hero__mockup reveal">
-        <div class="phone-ui">
-          <div class="phone-ui__screen">
-            <div class="chat-bubble chat-bubble--user">
-              <span>“What’s the required setback for a new duplex?”</span>
+        <div class="dashboard-ui">
+          <div class="dashboard-header">
+            <h3>Performance Overview</h3>
+            <span class="status-indicator">●</span>
+          </div>
+          <div class="dashboard-stats">
+            <div class="stat-card">
+              <div class="stat-number">142</div>
+              <div class="stat-label">Active Services</div>
             </div>
-            <div class="chat-bubble chat-bubble--calex">
-              <span>
-                “For R-2 zoning, min. setback is 15ft (see §17.24.030). Would you like a full checklist?”
-              </span>
+            <div class="stat-card">
+              <div class="stat-number">98.7%</div>
+              <div class="stat-label">Uptime</div>
             </div>
-            <div class="chat-bubble chat-bubble--user">
-              <span>“Does this trigger CEQA review?”</span>
+            <div class="stat-card">
+              <div class="stat-number">2,847</div>
+              <div class="stat-label">Citizens Served</div>
             </div>
-            <div class="chat-bubble chat-bubble--calex">
-              <span>
-                “No CEQA review for <2 units (CEQA §15303). Details in exportable report.”
-              </span>
+            <div class="stat-card">
+              <div class="stat-number">$2.4M</div>
+              <div class="stat-label">Cost Savings</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Demo Videos -->
-    <section id="demo" class="demo container">
-      <h2 class="section-title reveal">See Calex in Action</h2>
-      <div class="demo__featured reveal">
-        <div class="video-featured">
-          <button class="video__play" aria-label="Play featured demo" tabindex="0">
-            <svg width="64" height="64" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="32" fill="url(#grad)" /><polygon points="25,20 50,32 25,44" fill="#fff"/><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#6574F8"/><stop offset="100%" stop-color="#75F6E8"/></linearGradient></defs></svg>
-          </button>
-          <video controls poster="video1-poster.png" tabindex="0">
-            <source src="#" type="video/mp4">
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-          <div class="video__info">
-            <h3>Featured: RFP Checklist in Minutes</h3>
-            <p>Watch Calex walk through a full RFP approval call and checklist export.</p>
-          </div>
+    <!-- Features -->
+    <section id="features" class="features container">
+      <h2 class="section-title reveal">Powerful Analytics Features</h2>
+      <div class="features__grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">📊</div>
+          <h3>Real-time Dashboards</h3>
+          <p>Monitor key performance indicators with live data visualization and customizable dashboard views.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📈</div>
+          <h3>Performance Metrics</h3>
+          <p>Track service delivery, citizen satisfaction, and operational efficiency with comprehensive metrics.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎯</div>
+          <h3>Goal Tracking</h3>
+          <p>Set and monitor progress toward strategic objectives with automated reporting and alerts.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📋</div>
+          <h3>Compliance Monitoring</h3>
+          <p>Ensure regulatory compliance with automated checks and audit trail documentation.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">💡</div>
+          <h3>Predictive Analytics</h3>
+          <p>Leverage machine learning to forecast trends and identify optimization opportunities.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🔗</div>
+          <h3>System Integration</h3>
+          <p>Connect with existing government systems and databases for unified data management.</p>
         </div>
       </div>
-      <div class="demo__grid">
-        <div class="video-tile reveal">
-          <div class="video-thumb"><img src="video2-poster.png" alt="Zoning Q&A call poster"></div>
-          <h4>Zoning Q&amp;A Call</h4>
-          <p>Instant answers and citations for complex zoning queries.</p>
-        </div>
-        <div class="video-tile reveal">
-          <div class="video-thumb"><img src="video3-poster.png" alt="Environmental review flagging poster"></div>
-          <h4>Environmental Review Flagging</h4>
-          <p>Calex spots compliance gaps and flags risk in real time.</p>
-        </div>
-        <div class="video-tile reveal">
-          <div class="video-thumb"><img src="video4-poster.png" alt="Policy-aware response poster"></div>
-          <h4>Policy-Aware Responses</h4>
-          <p>Dynamic guidance drawn from real policy databases.</p>
+    </section>
+
+    <!-- Analytics Demo -->
+    <section id="analytics" class="analytics container">
+      <h2 class="section-title reveal">See GovDash Analytics in Action</h2>
+      <div class="analytics__showcase reveal">
+        <div class="analytics-demo">
+          <div class="demo-header">
+            <h3>Live Department Overview</h3>
+            <div class="demo-tabs">
+              <button class="demo-tab active">Performance</button>
+              <button class="demo-tab">Budget</button>
+              <button class="demo-tab">Citizens</button>
+            </div>
+          </div>
+          <div class="demo-content">
+            <div class="metric-grid">
+              <div class="metric-item">
+                <span class="metric-label">Service Requests</span>
+                <span class="metric-value">1,247</span>
+                <span class="metric-change positive">+12%</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Response Time</span>
+                <span class="metric-value">2.3 hrs</span>
+                <span class="metric-change positive">-8%</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Budget Utilization</span>
+                <span class="metric-value">87.4%</span>
+                <span class="metric-change neutral">0%</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-label">Citizen Satisfaction</span>
+                <span class="metric-value">4.2/5</span>
+                <span class="metric-change positive">+0.3</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- How It Works Timeline -->
     <section id="how" class="how container">
-      <h2 class="section-title reveal">How It Works</h2>
+      <h2 class="section-title reveal">How GovDash Works</h2>
       <ol class="timeline">
         <li class="timeline__step reveal">
-          <span class="timeline__icon" aria-hidden="true">📞</span>
+          <span class="timeline__icon" aria-hidden="true">🔗</span>
           <div>
-            <h4>Call or Upload</h4>
-            <p>Start by calling Calex or uploading your proposal docs.</p>
+            <h4>Connect Data Sources</h4>
+            <p>Integrate with your existing systems, databases, and third-party services.</p>
           </div>
         </li>
         <li class="timeline__step reveal">
-          <span class="timeline__icon" aria-hidden="true">📚</span>
+          <span class="timeline__icon" aria-hidden="true">⚙️</span>
           <div>
-            <h4>Retrieve Rules</h4>
-            <p>Calex fetches relevant zoning, CEQA, and local policy databases.</p>
+            <h4>Configure Dashboards</h4>
+            <p>Set up custom dashboards and metrics tailored to your organization's needs.</p>
           </div>
         </li>
         <li class="timeline__step reveal">
-          <span class="timeline__icon" aria-hidden="true">🔎</span>
+          <span class="timeline__icon" aria-hidden="true">📊</span>
           <div>
-            <h4>Analyze &amp; Cite</h4>
-            <p>Instant review and citations, flagging missing info and errors.</p>
+            <h4>Monitor Performance</h4>
+            <p>Track real-time performance metrics and receive automated alerts.</p>
           </div>
         </li>
         <li class="timeline__step reveal">
-          <span class="timeline__icon" aria-hidden="true">👤</span>
+          <span class="timeline__icon" aria-hidden="true">📈</span>
           <div>
-            <h4>Human Review (optional)</h4>
-            <p>Consultants can step in for complex cases or approvals.</p>
+            <h4>Analyze Trends</h4>
+            <p>Use advanced analytics to identify patterns and optimization opportunities.</p>
           </div>
         </li>
         <li class="timeline__step reveal">
           <span class="timeline__icon" aria-hidden="true">📄</span>
           <div>
-            <h4>Export Report + Audit Log</h4>
-            <p>Export a full review report with audit log and citations.</p>
+            <h4>Generate Reports</h4>
+            <p>Create automated reports for stakeholders with actionable insights.</p>
           </div>
         </li>
       </ol>
     </section>
 
-    <!-- Explanation / Our Idea -->
-    <section class="explanation container">
+    <!-- Benefits / Value Proposition -->
+    <section class="benefits container">
       <div class="explanation__left reveal">
-        <h2 class="section-title">Why Calex?</h2>
+        <h2 class="section-title">Why Choose GovDash?</h2>
         <p>
-          Short-staffed consultancies, long waits, and compliance errors slow down approvals for projects that matter. Calex solves this by delivering instant, audit-ready guidance on calls and proposals—making approval flows faster, more accurate, and always policy-compliant.
+          Government organizations face increasing pressure to deliver better services with limited resources. GovDash empowers public sector leaders with the data-driven insights needed to optimize operations, improve citizen services, and demonstrate accountability.
         </p>
       </div>
       <div class="explanation__right">
         <div class="value-card reveal">
-          <h3>AI Calling Agent</h3>
-          <p>Conversational, policy-aware, and always available.</p>
+          <h3>Improved Efficiency</h3>
+          <p>Streamline operations and reduce waste through data-driven decision making.</p>
         </div>
         <div class="value-card reveal">
-          <h3>Auto Proposal Review</h3>
-          <p>Automated, thorough checklists and flagging.</p>
+          <h3>Enhanced Transparency</h3>
+          <p>Provide citizens and stakeholders with clear visibility into government performance.</p>
         </div>
         <div class="value-card reveal">
-          <h3>Faster Approvals</h3>
-          <p>Reduce bottlenecks and accelerate your workflow.</p>
+          <h3>Better Service Delivery</h3>
+          <p>Monitor and improve service quality with real-time performance tracking.</p>
         </div>
         <div class="value-card reveal">
-          <h3>Transparency</h3>
-          <p>Clear citations, audit logs, and full process visibility.</p>
+          <h3>Compliance & Accountability</h3>
+          <p>Maintain regulatory compliance with automated monitoring and audit trails.</p>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="contact container">
-      <h2 class="section-title reveal">Start a Pilot</h2>
+      <h2 class="section-title reveal">Get Started with GovDash</h2>
       <form class="contact__form" autocomplete="off" aria-label="Contact Form">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" required aria-required="true" autocomplete="name">
+        
+        <label for="organization">Organization</label>
+        <input id="organization" name="organization" type="text" required aria-required="true" autocomplete="organization">
+        
         <label for="email">Email</label>
         <input id="email" name="email" type="email" required aria-required="true" autocomplete="email">
-        <label for="message">Message</label>
+        
+        <label for="message">Tell us about your analytics needs</label>
         <textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
-        <button type="submit" class="btn btn-primary" aria-label="Submit Contact Form">Send</button>
+        
+        <button type="submit" class="btn btn-primary" aria-label="Submit Contact Form">Request Demo</button>
       </form>
     </section>
   </main>
@@ -209,20 +262,21 @@
   <footer class="footer" aria-label="Footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="footer__logo">Calex</span>
-        <span class="footer__tagline">— Approvals that flow</span>
+        <span class="footer__logo">GovDash</span>
+        <span class="footer__tagline">— Analytics that empower</span>
       </div>
       <nav class="footer__nav" aria-label="Footer Navigation">
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#demo">Demo</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#analytics">Analytics</a></li>
           <li><a href="#how">How It Works</a></li>
           <li><a href="#contact">Contact</a></li>
           <li><a href="#">Privacy</a></li>
         </ul>
       </nav>
       <div class="footer__copy">
-        &copy; <span id="year"></span> Calex. All rights reserved.
+        &copy; <span id="year"></span> GovDash. All rights reserved.
       </div>
     </div>
   </footer>
